@@ -1,4 +1,4 @@
-# Rust Advent of Code Template
+# Rust Advent of Code Template 🎄
 Starting point for doing advent of code in rust
 
 ## CLI
