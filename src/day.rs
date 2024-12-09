@@ -34,4 +34,14 @@ pub trait Day {
     fn star2(&self, input: String) -> String {
         "Unimplemented".into()
     }
+
+    #[allow(unused)]
+    fn test_star1(&self) -> String {
+        "Unimplemented".into()
+    }
+
+    #[allow(unused)]
+    fn test_star2(&self) -> String {
+        "Unimplemented".into()
+    }
 }

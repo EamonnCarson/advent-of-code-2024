@@ -81,8 +81,14 @@ fn run_star(day: &dyn Day, input: String, is_second_star: bool) {
         false => day.star1(input),
         true => day.star2(input),
     };
-    println!("{} {solution}", "Solution:".green());
     let dur = start.elapsed();
+    let test_solution = match is_second_star {
+        false => day.test_star1(),
+        true => day.test_star2(),
+    };
+    println!("{} {test_solution}", "Test:".green());
+    println!();
+    println!("{} {solution}", "Solution:".green());
     println!("{}: {dur:?}", "Took".green());
     println!();
 }
